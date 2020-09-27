@@ -4,7 +4,7 @@ It is not using Mailgun API, only PHP curl
 
 All receipts are hidden, so they don't see each other emails
 
-![alt]("img.jpg")
+![alt](img.jpg)
 
 ## How to use:
 1. add this file into your PHP project
