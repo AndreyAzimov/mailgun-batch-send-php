@@ -15,16 +15,17 @@
 			"test3@example.com"
 		];
 
+		$from = 'Andrey from Sheet2Site support@sheet2site.com';
 		$subject = "Test Subject";
 		$message = "How are you today?";
 
-		send_mailgun_batch($emails_to_send_array, $subject, $message);
+		send_mailgun_batch($emails_to_send_array, $from, $subject, $message);
 	//</demo of how to use this function>
 
 //--------------------------------------------------------------------------------
 
 	//<send_mailgun_batch>
-		function send_mailgun_batch($emails_to_send_array, $subject, $message) {
+		function send_mailgun_batch($emails_to_send_array, $from, $subject, $message) {
 
 			# maximum is 1000 emails reciept per 1 send
 			# doc: https://documentation.mailgun.com/en/latest/user_manual.html#batch-sending
@@ -33,8 +34,6 @@
 				$mailgun_api_url = "https://api.mailgun.net/v3/email.example.com/messages";
 				$mailgun_api_key = 'api:27fb5dff743534dsfg8asdasdg-gdfgdf342-bfgdgdfeg24';
 			//
-			
-			$from = 'Andrey at Sheet2Site sheet2site@gmail.com';
 
 			$recipient_variables = "{ ";
 
