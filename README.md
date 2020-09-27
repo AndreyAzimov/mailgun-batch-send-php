@@ -1,5 +1,4 @@
-# mailgun-batch-send-php
-How to batch send emails using Mailgun in PHP.
+# How to send batch bulk emails using Mailgun in PHP.
 
 All receipts are hidden, so they don't see each other emails
 
