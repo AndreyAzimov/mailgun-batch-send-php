@@ -7,7 +7,7 @@ All receipts are hidden, so they don't see each other emails
 ![alt](img.jpg)
 
 ## How to use:
-1. add this file into your PHP project
+1. add this file `"send_mailgun_batch.php";` your PHP project
 2. `require_once "send_mailgun_batch.php";`
 3. change `$mailgun_api_url` and `$mailgun_api_key`
 4. Call this function `send_mailgun_batch($emails_to_send_array, $subject, $message);`
